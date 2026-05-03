@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Dork Vault</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="platforms.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="background-effects">
+        <div class="glow-orb red-orb"></div>
+        <div class="glow-orb purple-orb"
+            style="background: radial-gradient(circle, rgba(255, 215, 0, 0.8) 0%, rgba(255, 215, 0, 0) 70%);"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <div class="header-content">
+                    <i data-lucide="crown" class="header-icon"
+                        style="color: #ffd700; filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));"></i>
+                    <div>
+                        <h1>Premium Dork Vault</h1>
+                        <p class="subtitle">Exclusive search queries for high-value bug bounties and advanced
+                            vulnerabilities.</p>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem; align-items: stretch;">
+                    <a href="index.html" class="btn btn-secondary">
+                        <i data-lucide="arrow-left" class="btn-icon"></i> Back to Standard
+                    </a>
+                </div>
+            </div>
+            <div class="filters-container">
+                <div class="search-container">
+                    <i data-lucide="globe" class="search-icon"></i>
+                    <input type="text" id="domainInput" placeholder="Enter target domain or program name...">
+                </div>
+            </div>
+        </header>
+
+        <!-- Top Bug Bounty Platforms -->
+        <section class="platforms-section">
+            <div class="category-header">
+                <i data-lucide="globe" class="category-icon" style="color: #ffd700;"></i>
+                <h2>Top Bug Bounty Platforms</h2>
+            </div>
+            <div class="platforms-row">
+                <a href="https://hackerone.com/" target="_blank" class="platform-card">HackerOne</a>
+                <a href="https://bugcrowd.com/" target="_blank" class="platform-card">Bugcrowd</a>
+                <a href="https://www.intigriti.com/" target="_blank" class="platform-card">Integriti</a>
+                <a href="https://yeswehack.com/" target="_blank" class="platform-card">YesWeHack</a>
+                <a href="#" class="platform-card">Comohlo</a>
+            </div>
+        </section>
+
+        <main id="dorksContainer">
+            <!-- Content will be injected via JavaScript -->
+        </main>
+
+        <footer>
+            <p>For educational and authorized security testing purposes only.</p>
+        </footer>
+    </div>
+
+    <div id="toast" class="toast">
+        <i data-lucide="check-circle"></i>
+        <span>Copied to clipboard!</span>
+    </div>
+
+    <script src="premium.js"></script>
+</body>
+
+</html>

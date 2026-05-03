@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensitive Dork Vault</title>
+    <meta name="description"
+        content="A curated list of Google Dorks for discovering sensitive and confidential information.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for sleek typography and monospace code -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="background-effects">
+        <div class="glow-orb red-orb"></div>
+        <div class="glow-orb purple-orb"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <div class="header-content">
+                    <i data-lucide="shield-alert" class="header-icon"></i>
+                    <div>
+                        <h1>Sensitive Dork Vault</h1>
+                        <p class="subtitle">A categorized repository of advanced search queries to identify exposed
+                            confidential data, credentials, and misconfigurations.</p>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem; align-items: stretch;">
+                    <a href="analyzer.html" class="btn btn-primary analyzer-btn">
+                        <i data-lucide="cpu" class="btn-icon"></i> AI Analyzer
+                    </a>
+                    <a href="premium.html" class="btn btn-secondary premium-btn"
+                        style="color: #ffd700; border-color: rgba(255, 215, 0, 0.3); background-color: rgba(255, 215, 0, 0.05);">
+                        <i data-lucide="crown" class="btn-icon"></i> Premium Dorks
+                    </a>
+                </div>
+            </div>
+            <div class="filters-container">
+                <div class="search-container">
+                    <i data-lucide="globe" class="search-icon"></i>
+                    <input type="text" id="domainInput" placeholder="Enter target domain (e.g., example.com)...">
+                </div>
+                <div class="date-container">
+                    <div class="date-input-wrapper">
+                        <i data-lucide="clock" class="date-icon"></i>
+                        <select id="timelineSelect" class="timeline-select" title="Filter by Time">
+                            <option value="">Any time</option>
+                            <option value="24h">Past 24 hours</option>
+                            <option value="48h">Past 48 hours</option>
+                            <option value="1w">1 Week</option>
+                            <option value="1m">Past month</option>
+                            <option value="1y">Last year</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="dorksContainer">
+            <!-- Content will be injected via JavaScript -->
+        </main>
+
+        <footer>
+            <p>For educational and authorized security testing purposes only.</p>
+        </footer>
+    </div>
+
+    <!-- Toast Notification for Copy -->
+    <div id="toast" class="toast">
+        <i data-lucide="check-circle"></i>
+        <span>Copied to clipboard!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

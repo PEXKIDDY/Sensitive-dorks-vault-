@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Document Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="analyzer.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="background-effects">
+        <div class="glow-orb purple-orb" style="top: -10%; left: -5%;"></div>
+        <div class="glow-orb red-orb" style="bottom: -10%; right: -5%;"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <div class="header-content">
+                    <i data-lucide="cpu" class="header-icon"
+                        style="color: #00f0ff; filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.5));"></i>
+                    <div>
+                        <h1>AI Document Analyzer</h1>
+                        <p class="subtitle">Extract sensitive context, identify business risks, and quantify security
+                            impact from raw PDFs and exposed links.</p>
+                    </div>
+                </div>
+                <a href="index.html" class="btn btn-secondary analyzer-btn">
+                    <i data-lucide="arrow-left" class="btn-icon"></i> Back to Vault
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <div class="split-layout">
+                <!-- Right: File Upload -->
+                <div class="analyzer-card">
+                    <div class="card-header">
+                        <i data-lucide="upload-cloud"></i>
+                        <h2>Upload Local PDF</h2>
+                    </div>
+                    <p class="card-desc">Securely analyze an offline document for sensitive artifacts.</p>
+
+                    <div class="upload-zone" id="dropZone">
+                        <i data-lucide="file-text" class="upload-icon"></i>
+                        <p>Drag & drop your PDF here or</p>
+                        <input type="file" id="fileInput" accept=".pdf" style="display: none;">
+                        <button class="btn btn-secondary mt-1"
+                            onclick="document.getElementById('fileInput').click()">Browse Files</button>
+                    </div>
+                    <button class="btn btn-primary w-100 mt-2" id="btnAnalyzeFile" disabled>
+                        <i data-lucide="zap" class="btn-icon"></i> Scan Document
+                    </button>
+                </div>
+            </div>
+
+            <!-- Analysis Output -->
+            <div id="reportContainer" class="report-container hidden">
+                <div class="report-header">
+                    <h2><i data-lucide="shield-check" style="color: #00f0ff;"></i> Threat Intelligence Report</h2>
+                    <span id="scanStatus" class="status-badge scanning">Scanning...</span>
+                </div>
+
+                <div class="report-content" id="reportContent">
+                    <div class="scan-animation">
+                        <div class="scanner-line"></div>
+                        <i data-lucide="file-search" class="pulse-icon"></i>
+                        <p>AI Engine is parsing document structure and extracting key entities...</p>
+                    </div>
+                </div>
+            </div>
+
+            <p
+                style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 2rem; opacity: 0.8;">
+                <i data-lucide="info" style="width: 14px; height: 14px; vertical-align: middle; margin-right: 4px;"></i>
+                <strong>Note:</strong> Please re-verify the severity with AI models.
+            </p>
+        </main>
+    </div>
+
+    <script src="analyzer.js?v=2"></script>
+</body>
+
+</html>

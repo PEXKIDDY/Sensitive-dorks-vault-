@@ -1,0 +1,38 @@
+.platforms-section {
+    margin-bottom: 3.5rem;
+    animation: fadeIn 0.8s ease-out backwards;
+}
+
+.platforms-row {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.platform-card {
+    flex: 1;
+    min-width: 140px;
+    text-align: center;
+    background-color: var(--bg-card);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    padding: 1.25rem 1rem;
+    border-radius: 12px;
+    color: #e4e4e7;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platform-card:hover {
+    transform: translateY(-4px);
+    background-color: rgba(255, 215, 0, 0.08);
+    /* slight gold tint */
+    border-color: rgba(255, 215, 0, 0.6);
+    box-shadow: 0 10px 30px -10px rgba(255, 215, 0, 0.25);
+    color: #ffd700;
+}
