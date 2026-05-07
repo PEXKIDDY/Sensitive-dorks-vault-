@@ -1,5 +1,11 @@
 # Sensitive-dorks-vault
 
+# LOGO
+
+<img width="667" height="268" alt="image" src="https://github.com/user-attachments/assets/71f86097-43e9-4434-a525-1b16b7732f6e" />
+
+## TITLE
+
 <img width="1499" height="358" alt="image" src="https://github.com/user-attachments/assets/374d6154-d9c5-47be-8c16-b2615773d26f" />
 
 A comprehensive Open Source Intelligence (OSINT) dashboard designed for advanced threat discovery, sensitive data exposure monitoring, and AI-powered document analysis. This tool suite combines targeted Google Dorking methodologies with automated PDF metadata and content assessment.
