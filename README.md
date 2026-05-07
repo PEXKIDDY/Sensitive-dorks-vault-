@@ -24,7 +24,23 @@ A comprehensive Open Source Intelligence (OSINT) dashboard designed for advanced
 - **Frontend**: HTML5, CSS3 (Vanilla), JavaScript (ES6+).
 - **Core Functionality**: Regex-based threat detection, PDF parsing, dynamic DOM manipulation.
 
+## Live URL
+
+https://pexkiddy.github.io/Sensitive-dorks-vault-/
+
 ## Security Warning
 This toolkit is developed exclusively for **authorized security auditing, educational purposes, and defensive threat intelligence**. 
 
 Do not use these tools to scan, test, or exfiltrate data from web applications or environments in which you do not have explicit, written permission from the owner. Unauthorized use of these techniques is illegal and punishable by law.
+
+## Results 
+
+## Apple Acknowledgment
+
+<img width="778" height="224" alt="image" src="https://github.com/user-attachments/assets/0988bfc9-e1d4-4839-8941-508554560026" />
+
+## Microsoft Acknowledgment
+
+<img width="480" height="392" alt="image" src="https://github.com/user-attachments/assets/85a28299-f936-4b4e-8ac0-83b4a8b51218" />
+
+
